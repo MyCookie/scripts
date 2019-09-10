@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# Unmount any mapped crypt device if it follows the following 'spec':
+# Name of the mapped device is shared with the folder it's mounted to.
+# The folder resides in /
+
 echo "Checking for open files on $1"
 echo ""
 
